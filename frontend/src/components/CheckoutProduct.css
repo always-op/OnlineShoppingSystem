@@ -1,0 +1,34 @@
+.product {
+  display: flex;
+  margin: 20px 0;
+}
+
+.info {
+  padding-left: 20px;
+}
+
+.info > button {
+  background: #f0c14b;
+  border: 1px solid;
+  color: black;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+
+.info > button:hover {
+  cursor: pointer;
+}
+
+.product > img {
+  object-fit: contain;
+  max-height: 180px;
+  width: 180px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.rating {
+  display: flex;
+}
