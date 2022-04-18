@@ -4,7 +4,7 @@ import axios from 'axios'
 export const login = (email,password) => async(dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
     const {data} = await axios.post(
-        `http://localhost:1236/amazon/user/login`,
+        `https://amazon-clone-backend23.herokuapp.com/amazon/user/login`,
         {email,password},
         config
     )
@@ -15,7 +15,7 @@ export const login = (email,password) => async(dispatch) => {
 export const register = (email,password) => async(dispatch) => {
     const config = {headers: {'Content-Type': 'application/json'}};
     const {data} = await axios.post(
-        `http://localhost:1236/amazon/user/register`,
+        `https://amazon-clone-backend23.herokuapp.com/amazon/user/register`,
         {email,password},
         config
     )
@@ -23,7 +23,7 @@ export const register = (email,password) => async(dispatch) => {
 }
 
 export const logout = () => async(dispatch) => {
-    const link = 'http://localhost:1236/amazon/user/logout'
+    const link = 'https://amazon-clone-backend23.herokuapp.com/amazon/user/logout'
     const {data} = await axios.get(link)
     dispatch({type:LOGOUT_SUCCESS,payload:data})
 }
