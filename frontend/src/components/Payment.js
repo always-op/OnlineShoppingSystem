@@ -31,7 +31,7 @@ const Payment = () => {
                 return;
             }
 
-            const {data} = await axios.post('https://onlineshoppingsystem-backend.herokuapp.com/payment/order')
+            const {data} = await axios.post('https://onlineshoppingsystem-backend.herokuapp.com/amazon/payment/order')
             if(!data) {
                 alert("network error")
                 return;
