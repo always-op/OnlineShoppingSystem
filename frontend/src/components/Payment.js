@@ -57,7 +57,7 @@ const Payment = () => {
                         currency
                     }
                     
-                    const result = await axios.post('http://localhost:1236/amazon/payment/success',data)
+                    const result = await axios.post('https://onlineshoppingsystem-backend.herokuapp.com/success',data)
                     console.log(result.data)
                     
                 } ,
